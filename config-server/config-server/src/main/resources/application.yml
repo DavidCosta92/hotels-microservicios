@@ -4,4 +4,10 @@ server:
 spring:
   application:
     name: config-server
-
+  cloud:
+    server:
+      git:
+        uri: https://github.com/DavidCosta92/hotels-microservicios.git
+        searchPaths: config-data
+        username: ${GIT_USER}
+        password: ${GIT_PASSWORD}
